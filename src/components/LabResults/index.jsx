@@ -1,3 +1,4 @@
+import { IoMdDownload } from "react-icons/io";
 import './index.css'
 
 function LabResults({ results = [] }) {
@@ -33,7 +34,7 @@ function LabResults({ results = [] }) {
                   ) : null}
                 </div>
 
-                <span className="text-lg">⬇️</span>
+                <span className="text-lg"><IoMdDownload /></span>
               </div>
             );
           })}

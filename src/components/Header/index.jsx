@@ -2,6 +2,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlinePeopleAlt } from "react-icons/md";
 import { AiOutlineSchedule, AiOutlineTransaction } from "react-icons/ai";
 import { FiMessageSquare } from "react-icons/fi";
+import { IoSettings } from "react-icons/io5";
 
 function Header() {
   return (
@@ -38,7 +39,7 @@ function Header() {
           <h4 className="text-sm font-semibold text-[#072635]">Dr. Bruce Simmons</h4>
           <p className="text-xs text-gray-500">General Practitioner</p>
         </div>
-        <button className="text-xl">⚙️</button>
+        <button className="text-xl"><IoSettings /></button>
         <button className="text-xl">⋮</button>
       </div>
     </header>
