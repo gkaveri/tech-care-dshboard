@@ -1,16 +1,49 @@
-# React + Vite
+# Tech Care Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A healthcare dashboard built with React and Vite, based on a design provided by Coalition Technologies (Adobe XD).
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The dashboard displays patient data including diagnosis history, blood pressure charts, lab results, and vitals. The focus was on matching the design closely while keeping components reusable and the structure simple.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React, Vite, JavaScript (ES6+), CSS3
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+ ├── assets/
+ ├── components/
+ │   ├── BloodPressureCharts/
+ │   ├── DiagnosisHistory/
+ │   ├── DiagnosticList/
+ │   ├── Header/
+ │   ├── LabResults/
+ │   ├── PatientProfile/
+ │   ├── PatientsList/
+ │   └── VitalCards/
+ ├── services/
+ ├── App.jsx
+ ├── App.css
+ └── main.jsx
+```
+
+## Getting Started
+
+```bash
+git clone https://github.com/gkaveri/tech-care-dashboard.git
+cd tech-care-dashboard
+npm install
+npm run dev
+```
+
+## Screenshots
+
+![Dashboard](screenshots/healthcare-dashboard-screenshot1.png)
+![Dashboard Lower Section](screenshots/healthcare-dashboard-screenshot2.png)
+
+## Author
+
+G. Kaveri — [GitHub](https://github.com/gkaveri)
