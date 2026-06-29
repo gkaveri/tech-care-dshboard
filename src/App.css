@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f6f7fb;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.app-layout {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.app-placeholder {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  text-align: center;
+}
+
+.app-placeholder.error h2 {
+  color: #d63447;
+}
+
+.app-placeholder.error p {
+  color: #4a4a4a;
+  margin-top: 12px;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-areas: "sidebar main right";
+  grid-template-columns: 300px 1fr 300px;
+  gap: 16px;
+  align-items: start;
+  min-width: 1100px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  min-width: 0px;
+}
+
+.main-content {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+.right-panel {
+  grid-area: right;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 270px;
+  min-width: 270px;
+  max-width: 270px;
+}
+
+@media (max-width: 1200px) {
+  .app-layout {
+    padding: 16px;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard > .sidebar,
+  .dashboard > .main-content,
+  .dashboard > .right-panel {
+    width: 100%;
+  }
+}

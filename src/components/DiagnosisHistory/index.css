@@ -1,0 +1,21 @@
+.charts{
+    margin: 100px;
+}
+.title{
+    margin: 10px;
+    margin-bottom: 15px;
+}
+.value{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container{
+    margin: 10px;
+}
+.blood-pressure{
+    margin: 10px;
+}
+.cards{
+    margin: 10px;
+    padding: 10px;
+}
